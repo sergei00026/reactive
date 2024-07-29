@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg"/>
+    <link rel="stylesheet" href="assets/scss/main.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reactive</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__body">
+                <div class="header__box">
+                    <a href="#" class="header__logo">
+                        <img src="assets/images/logo.svg" alt="Логотип">
+                    </a>
+                    <p class="header__title">Выдача градостроительного плана земельного участка</p>
+
+                </div>
+                <div class="header__actions">
+                    <a href="#" class="header__user">
+                        <img src="assets/images/user.svg" alt="Пользователь">
+                    </a>
+                    <p class="header__userName">Константинопольский К.К</p>
+                    <button class="header__exit">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <section class="page__main main">
+            <div class="main__container grid-container">
+                <div class="main__body grid-container">
+                    <div class="main__content">
+                        <h1 class="main__title">Выдача градостроительного плана земельного участка</h1>
+                        <p class="main__subtitle">Градостроительный план земельного участка выдается в целях обеспечения
+                            субъектов градостроительной деятельности информацией, необходимой для
+                            архитектурно-строительного проектирования, строительства, реконструкции объектов
+                            капитального строительства в границах земельного участка.</p>
+
+
+                    </div>
+                    <div class="main__desc desc">
+                        <img src="assets/images/symbol.svg" alt="Герб">
+                        <p class="desc__title">Услугу предоставляет</p>
+                        <p class="desc__text">Орган местного самоуправления</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <form action="" method="get" class="main__form form ">
+                    <div class="form__numbering">
+                        <div class="form__number">
+                            <span>1</span>
+                            <img src="assets/images/Check.svg" alt="check">
+                        </div>
+                        <div class="form__main">
+                            <div class="form__title">Выбор заявителя</div>
+                            <div class="form__box ">
+                                <div class="box-radio__item">
+                                    <label for="fl">
+                                        <input type="radio" name="typeUser" id="fl">
+                                        <span></span>
+                                    </label>
+
+                                    <div class="box-radio__block">
+                                        <p class="box-radio__user">Константинопольский К.К. </p>
+                                        <p class="box-radio__typeUser">Физическое лицо</p>
+                                    </div>
+                                </div>
+                                <div class="box-radio__item">
+                                    <label for="ul">
+                                        <input type="radio" name="typeUser" id="ul">
+                                        <span></span>
+                                    </label>
+                                    <div class="box-radio__block">
+                                        <p class="box-radio__user">ООО «Константинополь» </p>
+                                        <p class="box-radio__typeUser">Юридическое лицо</p>
+                                    </div>
+                                </div>
+                                <button class="btn one">
+                                    Продолжить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__numbering _not-active">
+                        <div class="form__number">
+                            <span>2</span>
+                            <img src="assets/images/Check.svg" alt="check">
+                        </div>
+                        <div class="form__main">
+                            <div class="form__title">Данные заявителя</div>
+                            <div class="form__box ">
+                                <div class="data-box">
+                                    <label for="d1">Фамилия</label>
+                                    <input type="text" name="d1" id="d1" placeholder="Константинопольский">
+                                </div>
+                                <div class="data-box">
+                                    <label for="d2">Имя</label>
+                                    <input type="text" name="d2" id="d2" placeholder="Константин">
+                                </div>
+                                <div class="data-box">
+                                    <label for="d3">Отчество</label>
+                                    <input type="text" name="d3" id="d3" placeholder="Константин">
+                                </div>
+                                <div class="data-box">
+                                    <label for="e1">Электронная почта</label>
+                                    <input type="email" name="e1" id="e1" placeholder="konstantinopolskiy@mail.ru">
+                                </div>
+                                <div class="data-box">
+                                    <label for="t1">Телефон</label>
+                                    <input type="tel" name="t1" id="t1" placeholder="+7 (901) 123-45-67">
+                                </div>
+                                <div class="subtitle">Документ, удостоверяющий личность</div>
+                                <div class="data-box">
+                                    <label for="d4">Документ</label>
+                                    <input type="text" name="d4" id="d4" placeholder="Паспорт">
+                                </div>
+                                <div class="passport">
+                                    <div class="data-box passport__serial">
+                                        <label for="d5">Серия</label>
+                                        <input type="text" name="d5" id="d5" placeholder="5700">
+                                    </div>
+                                    <div class="data-box passport__number">
+                                        <label for="d6">Номер</label>
+                                        <input type="text" name="d6" id="d6" placeholder="555888">
+                                    </div>
+                                </div>
+                                <div class="issued">
+                                    <p class="issued__title">Когда выдан</p>
+                                    <div class="issued__box">
+                                        <div class="data-box">
+                                            <label for="d7">День</label>
+                                            <input type="text" name="d7" id="d7" placeholder="19">
+                                        </div>
+                                        <div class="data-box">
+                                            <label for="d8">Месяц</label>
+                                            <input type="text" name="d8" id="d8" placeholder="10">
+                                        </div>
+                                        <div class="data-box">
+                                            <label for="d9">Год</label>
+                                            <input type="text" name="d9" id="d9" placeholder="1990">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn two">
+                                    Продолжить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__numbering _not-active">
+                        <div class="form__number">
+                            <span>3</span>
+                            <img src="assets/images/Check.svg" alt="check">
+                        </div>
+                        <div class="form__main">
+                            <div class="form__title">Согласие</div>
+                            <div class="form__box ">
+                                <div class="agreement">
+                                    <p class="agreement__title">
+                                        Требуется ваше согласие по следующим пунктам:
+                                    </p>
+                                    <ul class="agreement__list">
+                                        <li>Я подтверждаю, что вся представленная информация является достоверной и
+                                            точной;
+                                        </li>
+                                        <li>Я несу ответственность в соответствии с действующим законодательством
+                                            Российской Федерации за предоставление заведомо ложных или неполных
+                                            сведений;
+                                        </li>
+                                        <li>Я выражаю свое согласие на необходимое использование и обработку своих
+                                            персональных данных, в том числе в информационных системах;
+                                        </li>
+                                        <li>Со сроками оказания государственной услуги ознакомлен.</li>
+                                    </ul>
+                                </div>
+                                <div class="box-radio__item">
+                                    <label for="sogl2">
+                                        <input type="checkbox" name="typeUser" id="sogl2">
+                                    </label>
+
+                                    <div class="box-radio__block">
+                                        <p class="box-radio__typeUser">Я подтверждаю свое согласие со всеми
+                                            вышеперечисленными пунктами</p>
+                                    </div>
+                                </div>
+                                <div class="box-radio__item">
+                                    <label for="sogl">
+                                        <input type="checkbox" name="typeUser" id="sogl">
+                                    </label>
+
+                                    <div class="box-radio__block">
+                                        <p class="box-radio__typeUser">Я уведомлен о том, что результат будет получен в
+                                            электронном виде</p>
+                                    </div>
+                                </div>
+                                <div class="box-radio__item warning">
+                                    <label>
+                                        <img src="assets/images/warning.svg" alt="Предупреждение">
+                                    </label>
+
+                                    <div class="box-radio__block">
+                                        <p class="box-radio__typeUser">Пожалуйста, еще раз внимательно проверьте все
+                                            данные перед отправкой</p>
+                                    </div>
+                                </div>
+                                <button class="btn three">
+                                    Отправить
+                                </button>
+                                <div class="agree">
+                                    Нажимая кнопку «Отправить», вы соглашаетесь с
+                                    <a href="#">правилами хранения и обработки персональных данных</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form__numbering  done dn ready">
+                        <div class="form__number">
+                            <img src="assets/images/Check.svg" alt="check">
+                        </div>
+                        <div class="form__main">
+                            <div class="form__title">Заявление принято</div>
+                            <div class="form__box ">
+                                <div class="accepted">
+                                    <p> Номер заявления <strong>RU-1234567</strong>. Максимальный срок предоставления
+                                        услуги — 20 рабочих дней.
+                                        Следите за статусом заявления в <a href="#">Личном кабинете</a>.</p>
+                                    <p> Если у вас остались вопросы по оказанию услуги, пожалуйста, обращайтесь по
+                                        телефону +7 (342) 123-45-67.</p>
+                                </div>
+                                <div class="buttons">
+                                    <div class="btn">Вернуться в каталог</div>
+                                    <div class="btn btn__transparent">Перейти в личный кабинет</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
